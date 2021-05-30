@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lord of the embedded</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body onload="getAvailable(apiUrl)">
+    <div class="container">
+        <h1 style="font-family: sans-serif;">Lord History</h1>
+        <div>
+            <h2 style="font-family: sans-serif;float:left">Lord Available : </h2>
+            <h2 id="now" style="font-family: sans-serif;float:right"></h2>
+        </div>
+        <div>
+            <h2 style="font-family: sans-serif;float:left">Total Lord Used Today : </h2>
+            <h2 id="total" style="font-family: sans-serif;float: right;"></h2>
+        </div>
+        
+        <form action="">
+            <div class="line">
+            <input type="date" id="StartDate" class="Box" placeholder="Start Date">
+            <input type="time" id="Time1" class="Box" placeholder="Time">
+            </div>
+            <div class="line">
+            <input type="date" id="EndDate" class="Box" placeholder="End Date">
+            <input type="time" id="Time2" class="Box" placeholder="Time">
+            </div>
+
+            <div>
+            <button class="line" id="searchBtn">Search</button>
+            </div>
+        </form>
+        <main>
+            <h1 style="margin: 20px;">Lazy to do chiphai</h1>
+        </main>
+    </div>
+</body>
+</html>
