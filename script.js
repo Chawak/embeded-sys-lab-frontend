@@ -131,17 +131,17 @@ async function getAvailable2(url)
         score.appendChild(S);
 
         let setText;
-        if(res.data.num_status=='H')
+        if(left>=75)
             setText="Don't Worry So much straw in machine"
-        else if(res.data.num_status=='M')
-            setText="These straw are enough for yous"
+        else if(left <75 && left > 25)
+            setText="These straw are enough for you"
         else 
             setText="Few straw left. Plz call this number and tell them to fill the machine"
         
         let status=document.getElementById("status");
         status.innerHTML=` ${setText}`;
         let tel=document.getElementById("telNum");
-        if(res.data.num_status=='L')
+        if(left<=25)
             tel.innerHTML=` 09X-XXX-XXXX`;
 
 }
